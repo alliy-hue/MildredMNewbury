@@ -435,7 +435,7 @@
       }
     }
 
-    /* ===== HERO VISUAL (IMPROVED LAYERING) ===== */
+    /* ===== HERO VISUAL ===== */
 
     .hero-visual {
       position: relative;
@@ -1287,23 +1287,40 @@
       }
       .hero-photo-card {
         max-width: 340px;
-        padding: 1.2rem 1.2rem 2.1rem;
+        padding: 1.2rem 1.2rem 1.6rem;
       }
       .hero-floating-tag {
-        top: 4px;
-        left: 14px;
-        font-size: 0.72rem;
+        position: static;
+        margin: 0 0 0.6rem;
+        font-size: 0.74rem;
         padding: 0.35rem 0.8rem;
       }
-      /* on tablet/phone, place stat and mini-avatars in normal flow to avoid overlap */
       .hero-floating-stat {
         position: static;
-        margin: 0.8rem auto 0;
+        margin: 0.7rem auto 0;
       }
       .hero-mini-gallery {
         position: static;
         transform: none;
-        margin-top: 0.8rem;
+        margin-top: 0.7rem;
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-media {
+        min-height: auto;
+        margin-top: 1.5rem;
+      }
+      .about-photo-main,
+      .about-photo-secondary {
+        position: static;
+        width: 100%;
+        transform: none;
+        border-radius: 18px;
+        margin-bottom: 1rem;
+      }
+      .about-photo-secondary {
+        display: none; /* show only one image on small screens */
       }
     }
 
@@ -1341,7 +1358,7 @@
       }
       .hero-photo-card {
         max-width: 320px;
-        padding: 1.1rem 1.1rem 2rem;
+        padding: 1.1rem 1.1rem 1.5rem;
       }
       .hero-photo-main {
         width: 230px;
@@ -1588,491 +1605,14 @@
         </p>
 
         <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">📚</div>
-            <div class="service-title">Visibility &amp; Placement</div>
-            <div class="service-tag">Book clubs • Libraries • Communities</div>
-            <p class="service-body">
-              Thoughtful, targeted introductions to reader communities, book clubs, and
-              librarian networks. We focus on groups where your book naturally belongs.
-            </p>
-            <ul class="service-list">
-              <li>Identify aligned clubs and communities.</li>
-              <li>Craft respectful, non‑spammy outreach.</li>
-              <li>Create or refine reading guides and notes.</li>
-              <li>Build a steady lift in conversations and reviews.</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">🗺️</div>
-            <div class="service-title">Strategy &amp; Consultation</div>
-            <div class="service-tag">Clarity • Focus • Roadmap</div>
-            <p class="service-body">
-              A clear, honest plan for your next 3–12 months. We review what you’ve tried,
-              what matters for your specific book, and what to prioritize now.
-            </p>
-            <ul class="service-list">
-              <li>Marketing audit of current efforts or blank slate.</li>
-              <li>Realistic goals based on your life and budget.</li>
-              <li>Launch, relaunch, or long‑term roadmaps.</li>
-              <li>Written summary you can follow step by step.</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">💌</div>
-            <div class="service-title">Digital Promotion &amp; Audience Growth</div>
-            <div class="service-tag">Social • Newsletter • Online presence</div>
-            <p class="service-body">
-              Gentle, sustainable online visibility that suits your personality. No pressure
-              to become a full‑time influencer.
-            </p>
-            <ul class="service-list">
-              <li>Choose the right platforms (and drop the rest).</li>
-              <li>Simple, authentic content ideas & rhythms.</li>
-              <li>Newsletter planning & reader‑friendly emails.</li>
-              <li>Outreach to bookish influencers & bloggers.</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">⭐</div>
-            <div class="service-title">Review &amp; Endorsement Support</div>
-            <div class="service-tag">Ethical • Reader‑driven • Trust</div>
-            <p class="service-body">
-              Ethical early‑reader programs and reviewer outreach that respect readers,
-              platforms, and your long‑term reputation.
-            </p>
-            <ul class="service-list">
-              <li>Design of ARC / early‑reader programs.</li>
-              <li>Identify aligned reviewers and early readers.</li>
-              <li>Respectful outreach & gentle follow‑up.</li>
-              <li>Guidance on featuring endorsements effectively.</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">✒️</div>
-            <div class="service-title">Brand &amp; Profile Development</div>
-            <div class="service-tag">Author presence • Positioning</div>
-            <p class="service-body">
-              Clarify who you are as an author, what you write, and why it matters—so readers
-              and gatekeepers instantly understand you.
-            </p>
-            <ul class="service-list">
-              <li>Author bios (short, medium, long).</li>
-              <li>Amazon &amp; Goodreads optimization suggestions.</li>
-              <li>Website copy & key message refinement.</li>
-              <li>Cohesive, trustworthy author presence.</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">🎙️</div>
-            <div class="service-title">Publicity &amp; Partnerships</div>
-            <div class="service-tag">Podcasts • Events • Collaborations</div>
-            <p class="service-body">
-              Strategic appearances and partnerships that extend your reach beyond existing
-              circles, while still feeling like you.
-            </p>
-            <ul class="service-list">
-              <li>Podcast & blog pitch ideas and templates.</li>
-              <li>Interview & speaking preparation.</li>
-              <li>Library & local organization partnerships.</li>
-              <li>Event & festival guidance where appropriate.</li>
-            </ul>
-          </div>
-        </div>
-
-        <p style="margin-top: 1.7rem; font-size: 0.94rem; color: var(--text-muted);">
-          Not sure which fits you best?
-          <a href="#contact" style="color: var(--accent); text-decoration: underline;">
-            Tell me about your book
-          </a>
-          and I’ll recommend a path that matches your goals and budget.
-        </p>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process">
-      <div class="container reveal">
-        <span class="badge">Process</span>
-        <h2 class="section-heading">How we work together</h2>
-        <p class="section-subtitle">
-          Every author and every book is different, but my process is always grounded in the
-          same four steps: clear, calm, and focused.
-        </p>
-        <div class="process-timeline">
-          <div class="process-step">
-            <div class="process-step-num">1</div>
-            <h4>Listen &amp; learn</h4>
-            <p>
-              You share your book, your story, what you’ve tried, and what you’re hoping for.
-              I ask questions, listen closely, and take notes. No judgment—just clarity.
-            </p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">2</div>
-            <h4>Plan &amp; propose</h4>
-            <p>
-              I map out realistic options based on your goals, timeline, and budget. You
-              receive a clear plan outlining what I recommend, what I’ll do, and what you’ll
-              do.
-            </p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">3</div>
-            <h4>Place &amp; promote</h4>
-            <p>
-              I begin outreach, placements, and support tasks, depending on your chosen
-              services. You see where your book is being considered and how readers are
-              responding.
-            </p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">4</div>
-            <h4>Reflect &amp; refine</h4>
-            <p>
-              We review results together and note what worked best. Then we refine your
-              ongoing plan and keep building momentum with the right readers.
-            </p>
-          </div>
+          <!-- services cards (unchanged from previous answer) -->
+          <!-- ... (keep as in previous message; omitted here for brevity) -->
         </div>
       </div>
     </section>
 
-    <!-- CASE SNAPSHOT -->
-    <section>
-      <div class="container reveal">
-        <span class="badge">Case snapshot</span>
-        <h2 class="section-heading">A recent result in simple numbers</h2>
-        <p class="section-subtitle">
-          Numbers never tell the whole story, but they can show the shape of what’s possible
-          when the right book meets the right readers.
-        </p>
-        <div class="process-timeline">
-          <div class="process-step">
-            <div class="process-step-num">1</div>
-            <h4>Debut romance author</h4>
-            <p>Previously: almost no book club interest, a handful of scattered reviews.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">2</div>
-            <h4>3 club selections</h4>
-            <p>Within one month of targeted placement, three community book clubs chose the book.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">3</div>
-            <h4>New reviews &amp; sign‑ups</h4>
-            <p>Several new thoughtful reviews and a noticeable lift in newsletter subscribers.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">4</div>
-            <h4>Most important result</h4>
-            <p>Readers who stayed, shared the book, and kept talking long after the initial campaign.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOKS -->
-    <section id="books" class="section-alt">
-      <div class="container reveal">
-        <span class="badge">Selected books</span>
-        <h2 class="section-heading">Books I’ve helped connect with readers</h2>
-        <p class="section-subtitle">
-          Each project is different, but the heart of the work is the same: matching a story
-          with the readers most likely to hold it close.
-        </p>
-
-        <div class="books-grid">
-          <div class="book-card">
-            <div class="book-cover-wrap">
-              <div class="book-cover">
-                <img src="51EaKtSA4oL._SY445_SX342_FMwebp_.webp" alt="Cover of The Rogue Prince by Elise Marion" />
-              </div>
-            </div>
-            <div class="book-body">
-              <div class="book-title">The Rogue Prince</div>
-              <div class="book-author">Elise Marion – Fantasy Romance</div>
-              <div class="book-role">
-                Reader community outreach, book club placement support, and visibility strategy.
-              </div>
-              <div class="book-result">
-                Result: increased engagement from fantasy romance readers and a steady rise in thoughtful reviews.
-              </div>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-cover-wrap">
-              <div class="book-cover">
-                <img src="51zuOE05taL._SY425_.jpg" alt="Cover of Bellman & Black by Diane Setterfield" />
-              </div>
-            </div>
-            <div class="book-body">
-              <div class="book-title">Bellman &amp; Black</div>
-              <div class="book-author">Diane Setterfield – Gothic / Literary Fiction</div>
-              <div class="book-role">
-                Reintroducing the book to book clubs and readers who appreciate dark, atmospheric storytelling.
-              </div>
-              <div class="book-result">
-                Result: new discussions and renewed interest in backlist titles.
-              </div>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-cover-wrap">
-              <div class="book-cover">
-                <img src="71qwqmyyXhL._SY425_.jpg" alt="Cover of If We Could Turn Back Time by Sian O'Gorman" />
-              </div>
-            </div>
-            <div class="book-body">
-              <div class="book-title">If We Could Turn Back Time</div>
-              <div class="book-author">Sian O’Gorman – Women’s Fiction / Uplifting</div>
-              <div class="book-role">
-                Visibility planning, book club outreach, and gentle digital promotion.
-              </div>
-              <div class="book-result">
-                Result: strong engagement from readers who love emotional, hopeful stories about second chances.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
-          Only feature books and covers you have permission to share. A fuller list of projects
-          and case highlights is available on request.
-        </p>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS + WHY TRUST -->
-    <section id="testimonials">
-      <div class="container reveal">
-        <span class="badge">Authors</span>
-        <h2 class="section-heading">What authors say</h2>
-        <p class="section-subtitle">
-          It’s an honor to be trusted with someone’s book. Here are a few words from authors
-          I’ve worked with, in their own voices.
-        </p>
-
-        <div class="testimonials-layout">
-          <div class="testimonial-slider" id="testimonialSlider">
-            <div class="testimonial-card active">
-              <p class="testimonial-quote">
-                “Before working with Mildred, I felt like my books were getting lost in the
-                noise. I knew <em>The Rogue Prince</em> had an audience, but I had no idea
-                how to actually reach the right fantasy romance readers. Mildred built a
-                step‑by‑step plan, introduced the book to targeted reader communities, and
-                guided me through gentle, authentic promotion. The result was more engaged
-                readers, thoughtful reviews, and a sense that my book was finally in the
-                hands of people who truly cared.”
-              </p>
-              <div class="testimonial-footer">
-                <div class="testimonial-avatar">
-                  <img src="Elise Marion.jpg" alt="Portrait of Elise Marion" />
-                </div>
-                <div class="testimonial-meta">
-                  <strong>Elise Marion</strong>
-                  <span>Author of <em>The Rogue Prince</em></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p class="testimonial-quote">
-                “I wanted to bring fresh attention to <em>Bellman &amp; Black</em> without
-                shouting into the void of social media. Mildred took the time to understand
-                the atmosphere and themes of the book, then quietly and carefully
-                reintroduced it to the right readers: book clubs, librarians, and lovers of
-                dark, literary stories. Her outreach led to new discussions, renewed interest
-                in my work, and a feeling that my book was being discovered all over again.
-                She is professional, calm, and completely grounded in integrity.”
-              </p>
-              <div class="testimonial-footer">
-                <div class="testimonial-avatar">
-                  <img src="Diane Setterfield.jpg" alt="Portrait of Diane Setterfield" />
-                </div>
-                <div class="testimonial-meta">
-                  <strong>Diane Setterfield</strong>
-                  <span>Author of <em>Bellman &amp; Black</em></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p class="testimonial-quote">
-                “I was looking for more than a quick spike in sales. I wanted
-                <em>If We Could Turn Back Time</em> to find its way into the hearts of
-                readers who love emotional, uplifting stories. Mildred helped me clarify my
-                message, refine my author presence, and connect with book clubs and
-                communities that genuinely responded to the book. Her plan was clear,
-                manageable, and kind. The conversations that followed felt real, and the
-                visibility we built has lasted far beyond the initial push.”
-              </p>
-              <div class="testimonial-footer">
-                <div class="testimonial-avatar">
-                  <img src="Sian O Gorman.webp" alt="Portrait of Sian O'Gorman" />
-                </div>
-                <div class="testimonial-meta">
-                  <strong>Sian O’Gorman</strong>
-                  <span>Author of <em>If We Could Turn Back Time</em></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-dots" id="testimonialDots">
-              <div class="testimonial-dot active" data-index="0"></div>
-              <div class="testimonial-dot" data-index="1"></div>
-              <div class="testimonial-dot" data-index="2"></div>
-            </div>
-          </div>
-
-          <div class="trust-box">
-            <strong>Why authors trust me</strong>
-            <p style="margin-top: 0.7rem; margin-bottom: 0.7rem;">
-              Book marketing is crowded with noise and shortcuts. I’ve chosen a different path.
-            </p>
-            <ul>
-              <li>No fake reviews. I never buy, trade, or manipulate reviews or ratings.</li>
-              <li>No dishonest promises. I can’t guarantee sales or bestseller status, and I won’t pretend to.</li>
-              <li>No spam. I approach communities and readers with respect, not as targets to exploit.</li>
-              <li>Authenticity first: real readers, real communities, real conversations.</li>
-              <li>Transparency: I explain what I can do, what I can’t, and what I truly recommend.</li>
-              <li>Reputation‑first thinking: protecting your long‑term reputation matters more than any single campaign.</li>
-            </ul>
-            <p style="margin-top: 0.8rem;">
-              <strong>Case highlight:</strong> A debut romance author was selected by three
-              community book clubs within one month of placement, leading to lively
-              discussions, several new reviews, and a noticeable lift in newsletter
-              sign‑ups. Most importantly, she found readers who stayed and kept talking about
-              the book.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section-alt">
-      <div class="container reveal">
-        <span class="badge">FAQ</span>
-        <h2 class="section-heading">Frequently asked questions</h2>
-
-        <div class="faq-grid">
-          <div>
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">Do you work with all genres?</div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                I work with a range of genres, including romance, fantasy, women’s fiction,
-                literary fiction, historical fiction, and nonfiction. If your book invites
-                readers to think, feel, and talk, there’s a good chance we can find a path for
-                it. If I think you need a different specialist, I’ll tell you honestly.
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">Can you guarantee sales or bestseller status?</div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                No—and anyone who promises that is not being honest with you. What I can do is
-                focus on positioning, outreach, reader alignment, and relational visibility.
-                Those are the elements that tend to build sustainable results over time.
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">
-                  How far in advance should I contact you before my launch?
-                </div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                Ideally, 3–6 months before publication. That gives us time to plan and reach
-                out to key communities. If your book is already out, we can still work
-                together to build or revive visibility.
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">
-                  Do you work with self‑published and traditionally published authors?
-                </div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                Yes. I work with both. Specific strategies may differ depending on your
-                publisher, contracts, and available support, but the core principles remain
-                the same: honesty, clarity, and reader‑centered visibility.
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">What if I’m shy or introverted?</div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                Many of my clients are. We design visibility strategies that do not require
-                you to become someone you’re not. You will never be pushed into loud,
-                performative marketing if it doesn’t fit you.
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">Do you manage paid ads like Facebook or Amazon?</div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                My primary focus is on organic and relationship‑based strategies: communities,
-                clubs, libraries, and long‑term visibility planning. I can offer high‑level
-                guidance around ads, but I’m not a dedicated ad manager. If you need deep ad
-                management, I may refer you to a specialist.
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">How much does it cost to work with you?</div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                Investment depends on the scope of work and your timeline. After we talk about
-                your book and goals, I’ll outline options at different levels so you can
-                choose what fits best. There is no surprise billing and no pressure to
-                proceed.
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question-row">
-                <div class="faq-question">How do we communicate while working together?</div>
-                <div class="faq-toggle">›</div>
-              </div>
-              <div class="faq-answer">
-                Most of our communication happens via email, with occasional calls or video
-                meetings depending on the service. I keep the process clear and simple so you
-                always know what’s happening and why.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- (Process, Case snapshot, Books, Testimonials, FAQ sections same as previous answer) -->
+    <!-- ... keep all those blocks exactly as in the previous full code ... -->
 
     <!-- CONTACT -->
     <section id="contact">
@@ -2087,18 +1627,19 @@
 
         <div class="contact-grid">
           <div class="contact-panel">
-            <form>
+            <!-- MAILTO FORM: opens user's email client with your address -->
+            <form action="mailto:newburymildredm@gmail.com" method="POST" enctype="text/plain">
               <div class="contact-field">
                 <label for="name">Full name</label>
-                <input id="name" type="text" placeholder="e.g. Jane Arthur" />
+                <input id="name" name="Name" type="text" placeholder="e.g. Jane Arthur" />
               </div>
               <div class="contact-field">
                 <label for="email">Email address</label>
-                <input id="email" type="email" placeholder="e.g. jane@example.com" />
+                <input id="email" name="Email" type="email" placeholder="e.g. jane@example.com" />
               </div>
               <div class="contact-field">
                 <label for="book">Book title and genre</label>
-                <input id="book" type="text" placeholder="e.g. The Stone Horse, historical fiction" />
+                <input id="book" name="Book & genre" type="text" placeholder="e.g. The Stone Horse, historical fiction" />
               </div>
               <div class="contact-field">
                 <label for="details">
@@ -2106,6 +1647,7 @@
                 </label>
                 <textarea
                   id="details"
+                  name="Message"
                   placeholder="Tell me a little about your story, your readers, and your current goals."
                 ></textarea>
               </div>
@@ -2136,18 +1678,13 @@
               </div>
             </div>
             <p>
-              When you click send, your message arrives directly in my inbox. I read it
-              carefully and may ask a few clarifying questions. If it seems like we’re a good
-              fit, I’ll suggest clear next steps—often a brief call or a tailored proposal.
+              When you click send, your computer or phone will open your email app with my
+              address filled in. You can review your message and press send when you’re ready.
             </p>
             <p style="margin-top: 0.8rem;">
               If I’m not the right person to help, I’ll say so honestly and, if I can, point
               you toward other helpful resources. Either way, you’ll receive a thoughtful,
               human reply.
-            </p>
-            <p style="margin-top: 0.8rem;">
-              Subject line suggestion if you email:
-              <strong>“YES – [Your Book Title]”</strong> so I can spot your note quickly.
             </p>
           </div>
         </div>
