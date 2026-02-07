@@ -129,12 +129,8 @@
     }
 
     @keyframes orbFloat {
-      from {
-        transform: translate3d(-40px, -10px, 0);
-      }
-      to {
-        transform: translate3d(40px, 60px, 0);
-      }
+      from { transform: translate3d(-40px, -10px, 0); }
+      to   { transform: translate3d(40px, 60px, 0); }
     }
 
     /* ============ NAVBAR ============ */
@@ -223,13 +219,8 @@
       transition: width var(--transition-fast);
     }
 
-    .nav-links a:hover {
-      color: #fff;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a:hover::after { width: 100%; }
 
     .nav-cta {
       padding: 0.55rem 1.4rem;
@@ -269,19 +260,11 @@
       align-items: center;
     }
 
-    .hero-text {
-      animation: heroFadeIn 1s ease-out both;
-    }
+    .hero-text { animation: heroFadeIn 1s ease-out both; }
 
     @keyframes heroFadeIn {
-      from {
-        opacity: 0;
-        transform: translate3d(0, 32px, 0);
-      }
-      to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
+      from { opacity: 0; transform: translate3d(0, 32px, 0); }
+      to   { opacity: 1; transform: translate3d(0, 0, 0); }
     }
 
     .hero-kicker {
@@ -343,25 +326,15 @@
       top: 0;
       width: 40px;
       height: 100%;
-      background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.25),
-        transparent
-      );
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.25), transparent);
       transform: skewX(-18deg) translateX(-100%);
       animation: btnShine 3.1s ease-in-out infinite;
     }
 
     @keyframes btnShine {
-      0% {
-        transform: skewX(-18deg) translateX(-120%);
-      }
-      50% {
-        transform: skewX(-18deg) translateX(210%);
-      }
-      100% {
-        transform: skewX(-18deg) translateX(210%);
-      }
+      0%   { transform: skewX(-18deg) translateX(-120%); }
+      50%  { transform: skewX(-18deg) translateX(210%); }
+      100% { transform: skewX(-18deg) translateX(210%); }
     }
 
     .btn-primary:hover {
@@ -386,9 +359,7 @@
         transform var(--transition-fast), border-color var(--transition-fast);
     }
 
-    .btn-outline span.arrow {
-      transition: transform var(--transition-fast);
-    }
+    .btn-outline span.arrow { transition: transform var(--transition-fast); }
 
     .btn-outline:hover {
       background: rgba(22, 18, 54, 0.96);
@@ -396,9 +367,7 @@
       transform: translateY(-1px);
     }
 
-    .btn-outline:hover .arrow {
-      transform: translateX(3px);
-    }
+    .btn-outline:hover .arrow { transform: translateX(3px); }
 
     .hero-footnote {
       font-size: 0.9rem;
@@ -407,35 +376,21 @@
     }
 
     @keyframes heroImageEnter {
-      from {
-        opacity: 0;
-        transform: translate3d(28px, 20px, 0) scale(0.96);
-      }
-      to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0) scale(1);
-      }
+      from { opacity: 0; transform: translate3d(28px, 20px, 0) scale(0.96); }
+      to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
     }
 
     @keyframes floatImage {
-      from {
-        transform: translate3d(0, 0, 0);
-      }
-      to {
-        transform: translate3d(0, -10px, 0);
-      }
+      from { transform: translate3d(0, 0, 0); }
+      to   { transform: translate3d(0, -10px, 0); }
     }
 
     @keyframes floatSide {
-      from {
-        transform: translate3d(0, 0, 0);
-      }
-      to {
-        transform: translate3d(0, 10px, 0);
-      }
+      from { transform: translate3d(0, 0, 0); }
+      to   { transform: translate3d(0, 10px, 0); }
     }
 
-    /* ===== HERO VISUAL (IMPROVED LAYERING) ===== */
+    /* ===== HERO VISUAL ===== */
 
     .hero-visual {
       position: relative;
@@ -599,13 +554,9 @@
       align-items: flex-start;
     }
 
-    .about-text p + p {
-      margin-top: 0.9rem;
-    }
+    .about-text p + p { margin-top: 0.9rem; }
 
-    .about-lists {
-      margin-top: 1.8rem;
-    }
+    .about-lists { margin-top: 1.8rem; }
 
     .about-lists h4 {
       font-size: 1rem;
@@ -645,11 +596,7 @@
       transform: rotate(-2deg);
     }
 
-    .about-photo-main img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .about-photo-main img { width: 100%; height: 100%; object-fit: cover; }
 
     .about-photo-secondary {
       position: absolute;
@@ -663,11 +610,7 @@
       transform: rotate(3deg);
     }
 
-    .about-photo-secondary img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .about-photo-secondary img { width: 100%; height: 100%; object-fit: cover; }
 
     /* ============ SIGNATURE SERVICE ============ */
 
@@ -713,14 +656,8 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    .signature-side h4 {
-      margin-bottom: 0.5rem;
-    }
-
-    .signature-side p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
+    .signature-side h4 { margin-bottom: 0.5rem; }
+    .signature-side p { font-size: 0.95rem; color: var(--text-muted); }
 
     /* ============ SERVICES GRID ============ */
 
@@ -731,15 +668,11 @@
     }
 
     @media (max-width: 980px) {
-      .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 720px) {
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
+      .services-grid { grid-template-columns: 1fr; }
     }
 
     .service-card {
@@ -758,11 +691,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: radial-gradient(
-        circle at top right,
-        rgba(169, 107, 255, 0.25),
-        transparent 60%
-      );
+      background: radial-gradient(circle at top right, rgba(169, 107, 255, 0.25), transparent 60%);
       opacity: 0;
       pointer-events: none;
       transition: opacity var(--transition-fast);
@@ -773,10 +702,7 @@
       border-color: rgba(169, 107, 255, 0.7);
       box-shadow: 0 26px 70px rgba(0, 0, 0, 0.95);
     }
-
-    .service-card:hover::after {
-      opacity: 1;
-    }
+    .service-card:hover::after { opacity: 1; }
 
     .service-icon {
       width: 46px;
@@ -790,11 +716,7 @@
       font-size: 1.3rem;
     }
 
-    .service-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      font-size: 1.02rem;
-    }
+    .service-title { font-weight: 600; margin-bottom: 0.25rem; font-size: 1.02rem; }
 
     .service-tag {
       font-size: 0.82rem;
@@ -804,16 +726,9 @@
       margin-bottom: 0.8rem;
     }
 
-    .service-body {
-      font-size: 0.94rem;
-      color: var(--text-muted);
-      margin-bottom: 0.6rem;
-    }
+    .service-body { font-size: 0.94rem; color: var(--text-muted); margin-bottom: 0.6rem; }
 
-    .service-list {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
+    .service-list { font-size: 0.9rem; color: var(--text-muted); }
 
     .service-list li {
       padding-left: 1.1rem;
@@ -837,15 +752,11 @@
     }
 
     @media (max-width: 980px) {
-      .process-timeline {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .process-timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 640px) {
-      .process-timeline {
-        grid-template-columns: 1fr;
-      }
+      .process-timeline { grid-template-columns: 1fr; }
     }
 
     .process-step {
@@ -872,10 +783,7 @@
       font-weight: 600;
     }
 
-    .process-step h4 {
-      margin-bottom: 0.4rem;
-      font-size: 1rem;
-    }
+    .process-step h4 { margin-bottom: 0.4rem; font-size: 1rem; }
 
     /* ============ BOOKS ============ */
 
@@ -886,15 +794,11 @@
     }
 
     @media (max-width: 1024px) {
-      .books-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .books-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 680px) {
-      .books-grid {
-        grid-template-columns: 1fr;
-      }
+      .books-grid { grid-template-columns: 1fr; }
     }
 
     .book-card {
@@ -913,9 +817,7 @@
       box-shadow: 0 26px 70px rgba(0, 0, 0, 0.98);
     }
 
-    .book-cover-wrap {
-      padding: 1.1rem 1.2rem 0.6rem;
-    }
+    .book-cover-wrap { padding: 1.1rem 1.2rem 0.6rem; }
 
     .book-cover {
       border-radius: 14px;
@@ -923,39 +825,14 @@
       border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
-    .book-cover img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .book-cover img { width: 100%; height: 100%; object-fit: cover; }
 
-    .book-body {
-      padding: 0 1.2rem 1.2rem;
-      font-size: 0.9rem;
-    }
+    .book-body { padding: 0 1.2rem 1.2rem; font-size: 0.9rem; }
 
-    .book-title {
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-    }
-
-    .book-author {
-      font-size: 0.86rem;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    .book-role {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      margin-bottom: 0.35rem;
-    }
-
-    .book-result {
-      font-size: 0.86rem;
-      color: var(--accent);
-      font-weight: 500;
-    }
+    .book-title { font-weight: 600; margin-bottom: 0.2rem; }
+    .book-author { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .book-role { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.35rem; }
+    .book-result { font-size: 0.86rem; color: var(--accent); font-weight: 500; }
 
     /* ============ TESTIMONIALS ============ */
 
@@ -967,14 +844,10 @@
     }
 
     @media (max-width: 960px) {
-      .testimonials-layout {
-        grid-template-columns: 1fr;
-      }
+      .testimonials-layout { grid-template-columns: 1fr; }
     }
 
-    .testimonial-slider {
-      position: relative;
-    }
+    .testimonial-slider { position: relative; }
 
     .testimonial-card {
       background: var(--bg-card);
@@ -995,11 +868,7 @@
       position: relative;
     }
 
-    .testimonial-quote {
-      font-size: 0.96rem;
-      color: var(--text-main);
-      margin-bottom: 1rem;
-    }
+    .testimonial-quote { font-size: 0.96rem; color: var(--text-main); margin-bottom: 1rem; }
 
     .testimonial-footer {
       display: flex;
@@ -1015,23 +884,11 @@
       border: 2px solid rgba(255, 255, 255, 0.22);
     }
 
-    .testimonial-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .testimonial-avatar img { width: 100%; height: 100%; object-fit: cover; }
 
-    .testimonial-meta {
-      font-size: 0.86rem;
-    }
-
-    .testimonial-meta strong {
-      display: block;
-    }
-
-    .testimonial-meta span {
-      color: var(--text-muted);
-    }
+    .testimonial-meta { font-size: 0.86rem; }
+    .testimonial-meta strong { display: block; }
+    .testimonial-meta span { color: var(--text-muted); }
 
     .testimonial-dots {
       display: flex;
@@ -1088,9 +945,7 @@
     }
 
     @media (max-width: 960px) {
-      .faq-grid {
-        grid-template-columns: 1fr;
-      }
+      .faq-grid { grid-template-columns: 1fr; }
     }
 
     .faq-item {
@@ -1109,10 +964,7 @@
       cursor: pointer;
     }
 
-    .faq-question {
-      font-size: 0.96rem;
-      font-weight: 500;
-    }
+    .faq-question { font-size: 0.96rem; font-weight: 500; }
 
     .faq-toggle {
       font-size: 1.1rem;
@@ -1134,9 +986,7 @@
       max-height: 260px;
     }
 
-    .faq-item.open .faq-toggle {
-      transform: rotate(90deg);
-    }
+    .faq-item.open .faq-toggle { transform: rotate(90deg); }
 
     /* ============ CONTACT ============ */
 
@@ -1148,9 +998,7 @@
     }
 
     @media (max-width: 960px) {
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
+      .contact-grid { grid-template-columns: 1fr; }
     }
 
     .contact-panel {
@@ -1159,11 +1007,15 @@
       border: 1px solid var(--border-soft);
       box-shadow: 0 24px 70px rgba(0, 0, 0, 0.95);
       padding: 1.9rem 1.7rem 1.8rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-    .contact-field {
-      margin-bottom: 1rem;
+    .contact-panel:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.95);
     }
+
+    .contact-field { margin-bottom: 1rem; }
 
     .contact-field label {
       display: block;
@@ -1174,7 +1026,8 @@
     }
 
     .contact-field input,
-    .contact-field textarea {
+    .contact-field textarea,
+    .contact-field select {
       width: 100%;
       border-radius: 12px;
       border: 1px solid var(--border-soft);
@@ -1189,31 +1042,24 @@
         box-shadow var(--transition-fast), background var(--transition-fast);
     }
 
-    .contact-field textarea {
-      min-height: 120px;
-    }
+    .contact-field textarea { min-height: 120px; }
 
     .contact-field input:focus,
-    .contact-field textarea:focus {
+    .contact-field textarea:focus,
+    .contact-field select:focus {
       border-color: var(--primary);
       box-shadow: 0 0 0 1px rgba(169, 107, 255, 0.6);
       background: rgba(3, 3, 10, 0.96);
     }
 
-    .contact-note {
-      margin-top: 0.7rem;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
+    .contact-note { margin-top: 0.7rem; font-size: 0.9rem; color: var(--text-muted); }
 
-    .contact-aside {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
+    .form-status { margin-top: 0.9rem; font-size: 0.9rem; color: var(--text-muted); }
+    .form-status.success { color: #8ef4b2; }
+    .form-status.error { color: #ffb3b3; }
 
-    .contact-aside strong {
-      color: var(--text-main);
-    }
+    .contact-aside { font-size: 0.95rem; color: var(--text-muted); }
+    .contact-aside strong { color: var(--text-main); }
 
     .mini-profile {
       display: flex;
@@ -1231,11 +1077,7 @@
       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.95);
     }
 
-    .mini-profile-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .mini-profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
 
     /* ============ FOOTER ============ */
 
@@ -1259,10 +1101,7 @@
       align-items: center;
     }
 
-    .footer-links {
-      display: flex;
-      gap: 0.8rem;
-    }
+    .footer-links { display: flex; gap: 0.8rem; }
 
     /* ============ RESPONSIVE TWEAKS ============ */
 
@@ -1274,37 +1113,62 @@
     }
 
     @media (max-width: 880px) {
+      /* HERO on tablet/phone */
       .hero-inner {
         grid-template-columns: 1fr;
         padding-top: 2rem;
       }
+
       .hero-visual {
         order: -1;
         justify-content: center;
+        margin-bottom: 1.2rem;
       }
-      .hero-title {
-        font-size: 2.25rem;
-      }
+
+      .hero-title { font-size: 2.25rem; }
+
       .hero-photo-card {
         max-width: 340px;
-        padding: 1.2rem 1.2rem 2.1rem;
+        padding: 1.2rem 1.2rem 1.8rem;
       }
+
       .hero-floating-tag {
         top: 4px;
         left: 14px;
         font-size: 0.72rem;
         padding: 0.35rem 0.8rem;
       }
-      /* on tablet/phone, place stat and mini-avatars in normal flow to avoid overlap */
+
+      /* place stat and mini-avatars in normal flow */
       .hero-floating-stat {
         position: static;
         margin: 0.8rem auto 0;
       }
+
       .hero-mini-gallery {
         position: static;
         transform: none;
         margin-top: 0.8rem;
       }
+
+      /* ABOUT on tablet/phone */
+      .about-grid { grid-template-columns: 1fr; }
+
+      .about-media {
+        min-height: auto;
+        margin-top: 1.6rem;
+      }
+
+      .about-photo-main,
+      .about-photo-secondary {
+        position: static;
+        width: 100%;
+        transform: none;
+        border-radius: 18px;
+        margin-bottom: 1rem;
+      }
+
+      .about-photo-secondary { display: none; }
     }
 
     @media (max-width: 720px) {
@@ -1317,15 +1181,9 @@
         flex-wrap: wrap;
         justify-content: center;
       }
-      header.hero {
-        min-height: auto;
-      }
-      section {
-        padding: 70px 0;
-      }
-      .container {
-        padding: 0 1.1rem;
-      }
+      header.hero { min-height: auto; }
+      section { padding: 70px 0; }
+      .container { padding: 0 1.1rem; }
       .stats-inner {
         flex-direction: column;
         align-items: flex-start;
@@ -1333,19 +1191,60 @@
     }
 
     @media (max-width: 480px) {
-      .hero-title {
-        font-size: 2rem;
-      }
-      .hero-subtitle {
-        font-size: 0.94rem;
-      }
+      .hero-title { font-size: 2rem; }
+      .hero-subtitle { font-size: 0.94rem; }
       .hero-photo-card {
         max-width: 320px;
-        padding: 1.1rem 1.1rem 2rem;
+        padding: 1.1rem 1.1rem 1.6rem;
       }
-      .hero-photo-main {
-        width: 230px;
-        height: 230px;
+      .hero-photo-main { width: 230px; height: 230px; }
+    }
+
+    /* =========================================================
+       IMPROVEMENTS (MOBILE FIXES)
+       ========================================================= */
+
+    /* Make <a class="btn-..."> behave like a real button (fixes mobile oddities) */
+    .btn-primary,
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Fix: Signature section was staying 2-columns on mobile (causes “disfigured” layout) */
+    @media (max-width: 880px) {
+      .signature-card {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 1.5rem 1.2rem;
+      }
+
+      .signature-side {
+        order: 2;
+      }
+    }
+
+    /* Keep signature bullets from trying to create multiple columns on phone widths */
+    @media (max-width: 720px) {
+      .signature-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Optional simple mobile navbar: show only CTA on small screens */
+    @media (max-width: 720px) {
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+      .navbar-inner {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+      .nav-links {
+        flex-wrap: nowrap;
       }
     }
   </style>
@@ -1400,17 +1299,15 @@
           Trusted by 200+ authors and reading communities across romance, fantasy, literary,
           historical, and nonfiction.
         </p>
+
+        <!-- FIX: removed <button> inside <a> (can render weird on mobile) -->
         <div class="hero-cta-row">
-          <a href="#contact">
-            <button class="btn-primary">Start a conversation</button>
-          </a>
-          <a href="#services">
-            <button class="btn-outline">
-              Explore services
-              <span class="arrow">→</span>
-            </button>
+          <a href="#contact" class="btn-primary">Start a conversation</a>
+          <a href="#services" class="btn-outline">
+            Explore services <span class="arrow">→</span>
           </a>
         </div>
+
         <p class="hero-footnote">
           If you’ve ever thought, “I know my book is good, but I have no idea how to get it
           in front of real readers,” you’re exactly who I work with.
@@ -1597,10 +1494,26 @@
               librarian networks. We focus on groups where your book naturally belongs.
             </p>
             <ul class="service-list">
-              <li>Identify aligned clubs and communities.</li>
+              <li>Identify aligned clubs, libraries, and reading communities.</li>
               <li>Craft respectful, non‑spammy outreach.</li>
-              <li>Create or refine reading guides and notes.</li>
-              <li>Build a steady lift in conversations and reviews.</li>
+              <li>Create or refine reading guides and discussion questions.</li>
+              <li>Support for featured reads and follow‑up conversations.</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🚀</div>
+            <div class="service-title">Launch &amp; Relaunch Campaigns</div>
+            <div class="service-tag">Pre‑launch • Launch • Post‑launch</div>
+            <p class="service-body">
+              Calm, clear launch or relaunch plans tailored to your life and capacity—no chaos,
+              no overwhelm, just focused steps.
+            </p>
+            <ul class="service-list">
+              <li>Pre‑launch timelines and task lists.</li>
+              <li>Launch week activities that feel doable and honest.</li>
+              <li>Post‑launch follow‑up so momentum doesn’t disappear.</li>
+              <li>Relaunch strategies for books that didn’t get a fair start.</li>
             </ul>
           </div>
 
@@ -1614,8 +1527,8 @@
             </p>
             <ul class="service-list">
               <li>Marketing audit of current efforts or blank slate.</li>
-              <li>Realistic goals based on your life and budget.</li>
-              <li>Launch, relaunch, or long‑term roadmaps.</li>
+              <li>Realistic goals based on your life, budget, and energy.</li>
+              <li>Launch, relaunch, or long‑term visibility roadmaps.</li>
               <li>Written summary you can follow step by step.</li>
             </ul>
           </div>
@@ -1629,9 +1542,9 @@
               to become a full‑time influencer.
             </p>
             <ul class="service-list">
-              <li>Choose the right platforms (and drop the rest).</li>
-              <li>Simple, authentic content ideas & rhythms.</li>
-              <li>Newsletter planning & reader‑friendly emails.</li>
+              <li>Choose the right platforms (and confidently drop the rest).</li>
+              <li>Simple, authentic content ideas & rhythm.</li>
+              <li>Newsletter setup, welcome ideas, and engagement prompts.</li>
               <li>Outreach to bookish influencers & bloggers.</li>
             </ul>
           </div>
@@ -1646,9 +1559,9 @@
             </p>
             <ul class="service-list">
               <li>Design of ARC / early‑reader programs.</li>
-              <li>Identify aligned reviewers and early readers.</li>
+              <li>Identify reviewers and early readers who fit your book.</li>
               <li>Respectful outreach & gentle follow‑up.</li>
-              <li>Guidance on featuring endorsements effectively.</li>
+              <li>Guidance on featuring reviews and endorsements effectively.</li>
             </ul>
           </div>
 
@@ -1661,10 +1574,10 @@
               and gatekeepers instantly understand you.
             </p>
             <ul class="service-list">
-              <li>Author bios (short, medium, long).</li>
-              <li>Amazon &amp; Goodreads optimization suggestions.</li>
+              <li>Author bios (short, medium, long) in your natural voice.</li>
+              <li>Amazon &amp; Goodreads page optimization suggestions.</li>
               <li>Website copy & key message refinement.</li>
-              <li>Cohesive, trustworthy author presence.</li>
+              <li>Consistent, trustworthy author presence across platforms.</li>
             </ul>
           </div>
 
@@ -1677,10 +1590,26 @@
               circles, while still feeling like you.
             </p>
             <ul class="service-list">
-              <li>Podcast & blog pitch ideas and templates.</li>
-              <li>Interview & speaking preparation.</li>
-              <li>Library & local organization partnerships.</li>
-              <li>Event & festival guidance where appropriate.</li>
+              <li>Podcast & blog pitch ideas and email templates.</li>
+              <li>Interview & speaking preparation (talking points, questions).</li>
+              <li>Library & local organization partnership ideas.</li>
+              <li>Festival, panel, and event suggestions where appropriate.</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📖</div>
+            <div class="service-title">Backlist &amp; Series Revitalization</div>
+            <div class="service-tag">Second life • Series strategy</div>
+            <p class="service-body">
+              Give older titles and series a thoughtful second life by reintroducing them to
+              new readers and communities.
+            </p>
+            <ul class="service-list">
+              <li>Spotlight plans for older books and series.</li>
+              <li>Reading guides and discussion questions for backlist titles.</li>
+              <li>Series‑friendly promo sequences (Book 1 vs. whole series).</li>
+              <li>Reintroductions to clubs, libraries, and genre communities.</li>
             </ul>
           </div>
         </div>
@@ -1692,54 +1621,6 @@
           </a>
           and I’ll recommend a path that matches your goals and budget.
         </p>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process">
-      <div class="container reveal">
-        <span class="badge">Process</span>
-        <h2 class="section-heading">How we work together</h2>
-        <p class="section-subtitle">
-          Every author and every book is different, but my process is always grounded in the
-          same four steps: clear, calm, and focused.
-        </p>
-        <div class="process-timeline">
-          <div class="process-step">
-            <div class="process-step-num">1</div>
-            <h4>Listen &amp; learn</h4>
-            <p>
-              You share your book, your story, what you’ve tried, and what you’re hoping for.
-              I ask questions, listen closely, and take notes. No judgment—just clarity.
-            </p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">2</div>
-            <h4>Plan &amp; propose</h4>
-            <p>
-              I map out realistic options based on your goals, timeline, and budget. You
-              receive a clear plan outlining what I recommend, what I’ll do, and what you’ll
-              do.
-            </p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">3</div>
-            <h4>Place &amp; promote</h4>
-            <p>
-              I begin outreach, placements, and support tasks, depending on your chosen
-              services. You see where your book is being considered and how readers are
-              responding.
-            </p>
-          </div>
-          <div class="process-step">
-            <div class="process-step-num">4</div>
-            <h4>Reflect &amp; refine</h4>
-            <p>
-              We review results together and note what worked best. Then we refine your
-              ongoing plan and keep building momentum with the right readers.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -2074,7 +1955,7 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT (FORMSPREE) -->
     <section id="contact">
       <div class="container reveal">
         <span class="badge">Start here</span>
@@ -2087,29 +1968,60 @@
 
         <div class="contact-grid">
           <div class="contact-panel">
-            <form>
+            <form id="contactForm" action="https://formspree.io/f/xreagqeq" method="POST">
               <div class="contact-field">
                 <label for="name">Full name</label>
-                <input id="name" type="text" placeholder="e.g. Jane Arthur" />
+                <input id="name" name="name" type="text" placeholder="e.g. Jane Arthur" required />
               </div>
               <div class="contact-field">
                 <label for="email">Email address</label>
-                <input id="email" type="email" placeholder="e.g. jane@example.com" />
+                <input id="email" name="email" type="email" placeholder="e.g. jane@example.com" required />
               </div>
               <div class="contact-field">
                 <label for="book">Book title and genre</label>
-                <input id="book" type="text" placeholder="e.g. The Stone Horse, historical fiction" />
+                <input id="book" name="book" type="text" placeholder="e.g. The Stone Horse, historical fiction" />
               </div>
+
+              <div class="contact-field">
+                <label for="support">What do you need help with?</label>
+                <select id="support" name="support type">
+                  <option value="">Select one</option>
+                  <option value="launch">Launch / relaunch strategy</option>
+                  <option value="visibility">Ongoing visibility & reader growth</option>
+                  <option value="bookclubs">Book club and library placement</option>
+                  <option value="reviews">Reviews & endorsements</option>
+                  <option value="branding">Author branding & profile</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="contact-field">
+                <label for="timeline">Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select one</option>
+                  <option value="prelaunch">I’m 3–6 months before launch</option>
+                  <option value="launch">I’m launching in the next 3 months</option>
+                  <option value="postlaunch">My book is already out</option>
+                  <option value="backlist">I want to revive older titles</option>
+                </select>
+              </div>
+
               <div class="contact-field">
                 <label for="details">
                   Short description of your book and what you’d like help with
                 </label>
                 <textarea
                   id="details"
+                  name="message"
                   placeholder="Tell me a little about your story, your readers, and your current goals."
+                  required
                 ></textarea>
               </div>
+
+              <input type="hidden" name="_subject" value="New author inquiry from website" />
+
               <button class="btn-primary" type="submit">Send message</button>
+
               <p class="contact-note">
                 Prefer email? Write to <strong>newburymildredm@gmail.com</strong>. I reply to
                 all messages within 48 hours (Monday–Friday).
@@ -2118,10 +2030,12 @@
                 What happens next:
               </p>
               <ul style="font-size:0.88rem; color:var(--text-muted); margin-top:0.3rem; padding-left:1rem;">
-                <li style="margin-bottom:0.25rem;">Your message goes directly to my inbox (no assistant, no automation).</li>
+                <li style="margin-bottom:0.25rem;">Your message comes directly to my inbox (no assistant, no automation).</li>
                 <li style="margin-bottom:0.25rem;">I read it carefully and may reply with a few simple follow‑up questions.</li>
                 <li style="margin-bottom:0.25rem;">If we’re a good fit, I’ll suggest clear next steps. If not, I’ll say so honestly.</li>
               </ul>
+
+              <p id="form-status" class="form-status"></p>
             </form>
           </div>
 
@@ -2136,9 +2050,8 @@
               </div>
             </div>
             <p>
-              When you click send, your message arrives directly in my inbox. I read it
-              carefully and may ask a few clarifying questions. If it seems like we’re a good
-              fit, I’ll suggest clear next steps—often a brief call or a tailored proposal.
+              When you click send, your note is delivered to my inbox through a secure
+              form service. I read every message personally and reply within 48 hours.
             </p>
             <p style="margin-top: 0.8rem;">
               If I’m not the right person to help, I’ll say so honestly and, if I can, point
@@ -2253,6 +2166,43 @@
         item.classList.toggle("open");
       });
     });
+
+    // FORMSPREE CONTACT FORM
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("form-status");
+
+    if (contactForm && formStatus) {
+      contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        formStatus.textContent = "Sending...";
+        formStatus.className = "form-status";
+
+        try {
+          const formData = new FormData(contactForm);
+
+          const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            contactForm.reset();
+            formStatus.textContent =
+              "Thank you—your message has been sent. I’ll reply within 48 hours.";
+            formStatus.classList.add("success");
+          } else {
+            formStatus.textContent =
+              "Something went wrong. Please try again, or email me directly at newburymildredm@gmail.com.";
+            formStatus.classList.add("error");
+          }
+        } catch (error) {
+          formStatus.textContent =
+            "Network error. Please check your connection or email me directly at newburymildredm@gmail.com.";
+          formStatus.classList.add("error");
+        }
+      });
+    }
   </script>
 </body>
 </html>
